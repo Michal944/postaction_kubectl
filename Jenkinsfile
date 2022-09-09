@@ -1,5 +1,7 @@
 pipeline {
-    agent 'develop'
+    agent {
+        label 'develop'
+    }
     environment{
         KUBECTL_VERSION="v1.25.0"
         MASTERNODE = "172.168.8.1"
