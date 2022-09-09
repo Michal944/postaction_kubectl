@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment{
+        KUBECTL_VERSION="v1.25.0"
+    }
     stages {
         stage('Build') {
             steps {
