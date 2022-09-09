@@ -2,6 +2,7 @@ pipeline {
     agent any
     environment{
         KUBECTL_VERSION="v1.25.0"
+        MASTERNODE = "172.168.8.1"
     }
     stages {
         stage('Build') {
