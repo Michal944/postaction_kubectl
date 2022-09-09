@@ -27,7 +27,7 @@ pipeline {
             sh "sed -i \"s+https://127.0.0.1+cp.k8s\" config.yaml"
             sh "./kubectl --kubeconfig=\"config.yaml\" get nodes -o wide"
             }
-
+        }
     post {
         always {
             cleanWs()
